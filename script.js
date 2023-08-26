@@ -1,12 +1,16 @@
+// script.js
 function highlight() {
-    //Write your code here
+  const strongElements = document.querySelectorAll('strong');
 
-
+  for (let i = 0; i < strongElements.length; i++) {
+    strongElements[i].classList.add('green-capitals');
+  }
 }
 
-
 function return_normal() {
-    //Write your code here
+  const strongElements = document.querySelectorAll('strong');
 
-    
+  for (let i = 0; i < strongElements.length; i++) {
+    strongElements[i].classList.remove('green-capitals');
+  }
 }
